@@ -28,7 +28,7 @@
       {% if node.title != null %}
         {% if node.layout == "page" %}
           {% assign node_parent = node.url | remove: "/README" %}
-          <a class="sidebar-nav-item{% if page.url contains node_parent %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}<br/>{{node.url}}<br/>{{page.url}}</a>
+          <a class="sidebar-nav-item{% if page.url contains node_parent %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
